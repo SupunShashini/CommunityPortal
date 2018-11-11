@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommunityPortal.MasterDetailHome.HomeBPage"
+            >
+             
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <ListView x:Name="ImageList" HorizontalOptions="Start">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ImageCell x:Name="imgUploaded" ImageSource="download.png" />
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout>
+                <Label Text="Home"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" />
+
+                <Button x:Name="GoBack" Text="Back to Grid Page" Clicked="GoBack_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

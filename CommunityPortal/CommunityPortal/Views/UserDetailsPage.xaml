@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommunityPortal.Views.UserDetailsPage">
+    <ContentPage.Content>
+        <Grid>
+            <ScrollView>
+                <StackLayout >
+                    <StackLayout HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Margin="20,120,20,20">
+                        <Label
+                   x:Name="nameLbl"
+                   FontSize="25"/>
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="Start"
+                         VerticalOptions="Center"
+                         Margin="20">
+                        <Label x:Name="emailLbl"
+                       FontSize="20"/>
+                        <Label x:Name="usernameLbl"
+                       FontSize="20"/>
+                        <Label x:Name="phoneNumberLbl"
+                       FontSize="20"/>
+                        <Label x:Name="addressLbl"
+                       FontSize="20"/>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center">
+                        <Button x:Name="editBtn"
+                        Text="Edit"
+                        WidthRequest="200"
+                        CornerRadius="10"
+                        Clicked="editBtn_Clicked"
+                        BackgroundColor="DeepSkyBlue"/>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            <ActivityIndicator x:Name="activityIndicator"
+                               IsRunning="{Binding IsBusy}"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Color="DeepSkyBlue"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

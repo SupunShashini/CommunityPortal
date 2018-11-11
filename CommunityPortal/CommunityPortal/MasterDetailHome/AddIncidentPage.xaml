@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommunityPortal.MasterDetailHome.AddIncidentPage">
+    <ContentPage.Content>
+        <StackLayout Margin="10, 10, 10, 10" BackgroundColor="White">
+            <Label Text="Title"/>
+            <Entry/>
+            <Label Text="Discription"/>
+            <Editor AutoSize="TextChanges"/>
+            <Label Text="Date"/>
+            <DatePicker MinimumDate="{Binding MinDate}"
+            MaximumDate="{Binding MaxDate}"
+            Date="{Binding SelectedDate}" />
+            <Label Text="Address"/>
+            <Editor AutoSize="TextChanges"/>
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Button 
+                x:Name="dismissButton"
+                Text="Cancel"
+                Clicked="dismissButton_Clicked"
+            />
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Button 
+                x:Name="save"
+                Text="Save"
+                Clicked="save_Clicked"
+                    />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

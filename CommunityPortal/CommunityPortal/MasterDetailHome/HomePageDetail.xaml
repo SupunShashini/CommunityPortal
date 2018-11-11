@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommunityPortal.MasterDetailHome.HomePageDetail"
+             Title="Home">
+    <ContentPage.Content>
+        <Grid x:Name="mainGrid" RowSpacing="1" ColumnSpacing="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button  Grid.Row="0" Grid.Column="0" x:Name="homebtn" Clicked="Homebtn_Clicked"  BackgroundColor="White" Image="home.png" HorizontalOptions="FillAndExpand"/>
+            <Button  Grid.Row="0" Grid.Column="1"  x:Name="prptyDbtn" Clicked="PrptyDbtn_Clicked_1"  BackgroundColor="White" Image="propertyD.png" HorizontalOptions="FillAndExpand"/>
+            <Button  Grid.Row="1" Grid.Column="0"  x:Name="dashBbtn" Clicked="DashBbtn_Clicked"  BackgroundColor="White" Image="dash.png" HorizontalOptions="FillAndExpand"/>
+            <Button  Grid.Row="1" Grid.Column="1"  x:Name="accSbtn" Clicked="AccSbtn_Clicked"  BackgroundColor="White" Image="acc.png" HorizontalOptions="FillAndExpand"/>
+            <Button  Grid.Row="2" Grid.Column="0"  x:Name="incidentbtn" Clicked="Incidentbtn_Clicked"  BackgroundColor="White" Image="incidents.png" HorizontalOptions="FillAndExpand"/>
+            <Button  Grid.Row="2" Grid.Column="1"  x:Name="myLevybtnbtn" Clicked="MyLevybtnbtn_Clicked"  BackgroundColor="White" Image="levy.png" HorizontalOptions="FillAndExpand"/>
+            <Button  Grid.Row="3" Grid.Column="0"  x:Name="myaccbtn" Clicked="MyDocuments_Clicked"  BackgroundColor="White" Image="documents.png" HorizontalOptions="FillAndExpand"/>
+            <Button  Grid.Row="3" Grid.Column="1"  x:Name="commAbtn" Clicked="CommAbtn_Clicked" BackgroundColor="White" Image="committee.png" HorizontalOptions="EndAndExpand"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

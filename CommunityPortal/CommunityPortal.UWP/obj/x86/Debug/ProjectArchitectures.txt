@@ -1,0 +1,1 @@
+C:\Users\Ashen Shalitha\source\repos\CommunityPortal\CommunityPortal\CommunityPortal.UWP\CommunityPortal.UWP.csproj;x86
