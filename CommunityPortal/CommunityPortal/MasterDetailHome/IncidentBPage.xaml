@@ -3,18 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CommunityPortal.MasterDetailHome.IncidentBPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Incidents!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout >
             <Button x:Name="addIncident" 
                     Text="Add Incident"
-                    TextColor="White"
-                    BackgroundColor="Aqua"
+                    TextColor="Black"
+                    BackgroundColor="#eee"
                     BorderRadius="5"
                     FontAttributes="Bold"
-                    Clicked= "AddIncident_Clicked" />
+                    Clicked= "AddIncident_Clicked"
+                    Margin="0,0,0,0"
+                    HeightRequest="80"
+                    WidthRequest="10"/>
 
+           
+            
             <Button x:Name="GoBack" Text="Back to Grid Page" Clicked="GoBack_Clicked"/>
         </StackLayout>
     </ContentPage.Content>

@@ -3,33 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CommunityPortal.MasterDetailHome.AddIncidentPage">
     <ContentPage.Content>
-        <StackLayout Margin="10, 10, 10, 10" BackgroundColor="White">
+        <StackLayout Margin="10, 10, 10, 10" VerticalOptions="Center" BackgroundColor="White">
             <Label Text="Title"/>
-            <Entry/>
+            <Entry
+                x:Name="titleEntry"
+            />
             <Label Text="Discription"/>
-            <Editor AutoSize="TextChanges"/>
-            <Label Text="Date"/>
-            <DatePicker MinimumDate="{Binding MinDate}"
-            MaximumDate="{Binding MaxDate}"
-            Date="{Binding SelectedDate}" />
+            <Editor
+                x:Name="discriptionEntry"
+                AutoSize="TextChanges"
+            />
             <Label Text="Address"/>
-            <Editor AutoSize="TextChanges"/>
+            <Editor 
+                x:Name="addressEntry"
+                AutoSize="TextChanges"
+            />
             <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                 <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
                     <Button 
-                x:Name="dismissButton"
-                Text="Cancel"
-                Clicked="dismissButton_Clicked"
-            />
+                        x:Name="dismissButton"
+                        Text="Cancel"
+                        Clicked="dismissButton_Clicked"
+                    />
                 </StackLayout>
                 <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
                     <Button 
-                x:Name="save"
-                Text="Save"
-                Clicked="save_Clicked"
+                        x:Name="saveBtn"
+                        Text="Save"
+                        Clicked="save_Clicked"
                     />
                 </StackLayout>
             </StackLayout>
+            <ActivityIndicator 
+                x:Name="activityIndicator"
+                IsRunning="{Binding IsBusy}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Color="DeepSkyBlue"
+            />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

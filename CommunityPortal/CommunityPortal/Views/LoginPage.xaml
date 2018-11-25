@@ -11,23 +11,31 @@
 				   Aspect="AspectFit"
 				   WidthRequest="200" 
 				   HeightRequest="200"/>
-                    <Entry x:Name="usernameEntry" 
-				   Placeholder="Username"/>
-                    <Entry x:Name="passwordEntry" 
-				   Placeholder="Password"
-				   IsPassword="True"/>
-                    <Button Text="Login" 
-					x:Name="LoginBtn"
-					Clicked="LoginBtn_Clicked"
-					CornerRadius="10"
-					BackgroundColor="DeepSkyBlue"/>
+                    <Entry 
+                        x:Name="usernameEntry" 
+				        Placeholder="Username"
+                    />
+                    <Entry 
+                        x:Name="passwordEntry" 
+				        Placeholder="Password"
+				        IsPassword="True"
+                    />
+                    <Button 
+                        Text="Login" 
+					    x:Name="LoginBtn"
+					    Clicked="LoginBtn_Clicked"
+					    CornerRadius="10"
+					    BackgroundColor="DeepSkyBlue"
+                    />
                 </StackLayout>
             </ScrollView>
-            <ActivityIndicator x:Name="activityIndicator"
-                               IsRunning="{Binding IsBusy}"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center"
-                               Color="DeepSkyBlue"/>
+            <ActivityIndicator 
+                x:Name="activityIndicator"
+                IsRunning="{Binding IsBusy}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Color="DeepSkyBlue"
+            />
         </Grid>
 	</ContentPage.Content>
 </ContentPage>
